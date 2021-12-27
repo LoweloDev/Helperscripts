@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker stop $1 && docker rm $1
+docker run --name $1 -p $3:$3 -e POSTGRES_HOST_AUTH_METHOD=trust -d $2
