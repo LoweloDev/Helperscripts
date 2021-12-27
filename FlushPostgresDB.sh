@@ -1,4 +1,4 @@
-passwd="P3t3r456!"
+passwd=$1
 
 echo "Removing data..."
 echo $passwd | sudo -S rm -rf /var/lib/postgres/data
